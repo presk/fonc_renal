@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+	<script type="text/javascript" src="fonc.js"></script>
+</head>
+
+<body>
+    <div class="contentArea">
+            <form id= "calculator" action="" onsubmit="return false">
+                <table>
+                    <tr>
+                        <td>Âge:</td>
+                        <td><input type="number" id="age" min="0" step="1" /></td>
+                        <td/>
+                    </tr>
+                    <tr>
+                        <td>Sexe:</td>
+                        <td>
+                            <input type="radio" name="gender" value="m" /> Homme<br>
+                            <input type="radio" name="gender" value="f"/> Femme
+                            
+                        </td>
+                        <td />
+                    </tr>
+                    <tr>
+                        <td>Taille:</td>
+                        <td><input type="number" id="height" min="0" max="300" />cm</td>
+                        <td />
+                    </tr>
+                    <tr>
+                        <td>Poids:</td>
+                        <td>
+                            <input type="number" id="weight" min="0" max="300" step="0.01" />kg
+                        </td>
+                        <td>
+                            <p id="aWeight"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Origine africaine:</td>
+                        <td><input type="radio" id="origin" value="y" />Oui<br />
+                        </td>
+                        <td />
+                    </tr>
+                    <tr>
+                        <td>IDMS:</td>
+                        <td>
+                            <input type="radio" id="IDMS" value="y" />Oui
+                        </td>
+                        <td />
+                    </tr>
+                    <tr>
+                        <td>Créatinine:</td>
+                        <td><input type="number" id="creat" step="0.01" />&#181;mol/L</td>
+                        <td />
+                    </tr>
+                    <tr>
+                        <td>Cockroft-Gault:</td>
+                        <td><input type="number" id="CG" step="0.01" />mL/min</td>
+                        <td />
+                    </tr>
+                    <tr>
+                        <td>MDRD:</td>
+                        <td><input type="number" id="MDRD" step="0.01" />mL/min/1.73m²</td>
+                        <td />
+                    </tr>
+                    <tr>
+                        <td>CKD-EPI:</td>
+                        <td><input type="number" id="CKDEPI" step="0.01" />mL/min/1.73m²</td>
+                        <td />
+                    </tr>
+                    <tr>
+                        <td>
+                            <button onclick="calc()">
+                                Soumettre
+                            </button>
+                        </td>
+                        <td>
+                            <button onclick="resetFields()">
+                                Remise a zéro
+                            </button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+    </div>
+</body>
+</html>
